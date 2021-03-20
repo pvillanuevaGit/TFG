@@ -86,3 +86,10 @@ Dicha aplicación se encargará de administrar la base de datos que recogerá es
 <b>5.	Cuenta Github y enlace al TFG</b>
 
 Toda la información de este TFG se irá alojando en la siguiente cuenta y repositorio de Github: https://github.com/pvillanuevaGit/TFG
+
+<b>I.	Glosario de términos</b>
+
+<b>AMP (Accelerated Mobile Pages):</b> Es un nuevo lenguaje de programación que nace con el objetivo de mejorar la velocidad de carga de las páginas web para móviles. Las páginas AMP se programan en un lenguaje propio, una variación del HTML, llamada AMP HTML
+
+<b>Reel:</b> Es un currículo, portfolio o presentación de los mejores trabajos que se han realizado en formato vídeo. Una muestra, en pequeños fragmentos, de todos los trabajos realizados por: directores de fotografía, directores de cine, animadores y todo aquel que esté involucrado en el mundo audiovisual.
+
