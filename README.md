@@ -44,6 +44,8 @@ Las Tecnologías necesarias para la implementación de la web y la aplicación q
 
 	Xampp para realizar el despliegue de la aplicación en local (la cual incluye, apache, tomcat, mysql, que serán necesarios para realizar el despliegue).
 
+ WireframeSketcher
+
 <b>4.	Apartados a implementar </b>
 
 •	WEB:
