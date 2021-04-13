@@ -1,0 +1,54 @@
+create schema neveritas;
+use neveritas;
+
+create table videos(
+    id_item int NOT NULL AUTO_INCREMENT,
+    titulo varchar(255),
+    url_video varchar(1000) NOT NULL,
+    categoria varchar(255) NOT NULL,
+    id_usuario int NOT NULL,
+    PRIMARY KEY (id_item),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Boda','https://www.youtube.com/embed/4h5QoSCtnzY?controls=0','reel',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Tiro','https://www.youtube.com/embed/30p1IIpR4wU?controls=0','reel',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Eventos','https://www.youtube.com/embed/gcv3AOt7nQU?controls=0','reel',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Teatro','https://www.youtube.com/embed/84Xb7EVNK1s?controls=0','reel',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Campeonato España','https://www.youtube.com/embed/dr4H4Wh_QKA','teledeporte',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Campeonato Plato','https://www.youtube.com/embed/aeiY3_tgWOI','teledeporte',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Televisión Española','https://www.rtve.es/alacarta/videos/otros-deportes/futbol-americano-final-copa-espana/5470944/','teledeporte',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Final WEC 2015','https://www.youtube.com/embed/jjc2Ex8JFSY?controls=0','streaming',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Opening Game WEC','https://www.youtube.com/embed/3XWGwlJd0dw?controls=0','streaming',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Armas Históricas','https://www.youtube.com/embed/LbU7WGhlKuM?controls=0','streaming',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Avanzando Yardas','https://www.youtube.com/embed/uPkNmHtlDk8?controls=0','reportaje',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Flag Football','https://www.youtube.com/embed/ZLU9dDVCccM?controls=0','reportaje',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Entrevistas Football','https://www.youtube.com/embed/wDvTek5mghE?controls=0','reportaje',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Moda Arte 2015','https://www.youtube.com/embed/aMPYwOd2ECk?controls=0','publicidad',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Desfile Franela Gray','https://www.youtube.com/embed/zZCVHW-Ieow?controls=0','publicidad',1);
+INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Mar de Redín','https://www.youtube.com/embed/KNCaeCtBp00?controls=0','publicidad',1);
+create table empresas(
+    id_item int NOT NULL AUTO_INCREMENT,    
+    url_logo varchar(1000) NOT NULL,
+    url_empresa varchar(1000) NOT NULL,
+    id_usuario int NOT NULL,
+    PRIMARY KEY (id_item),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/Esero.svg.png','http://esero.es/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/laligasport.png','https://www.laligasportstv.com/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/ArtGest.png','https://artgest.es/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/JoomladayGranada.png','https://angelquintanar.com/experiencia-con-joomla/joomladays/joomladay-granada-16',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/FEFARRSS.png','https://www.fefa.es/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/Marsyluna.png','https://elvestidordefortuny.granadaimedia.com/2015/04/14/marsy-luna-blogger-granada/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/ParqueCienciasGranada.png','https://www.parqueciencias.com/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/Prodisa.png','https://prodisacomunicacion.com/es/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/Tve_teledeporte.png','https://www.rtve.es/directo/teledeporte/',1);
+INSERT INTO empresas(url_logo, url_empresa, id_usuario) values('img/FederacionTiro.png','https://www.tirolimpico.org/',1);
+create table usuarios(
+	id_usuario int NOT NULL AUTO_INCREMENT,
+    usuario varchar(255) NOT NULL,
+    password varchar(18) NOT NULL,
+    PRIMARY KEY (id_usuario)
+);
+
+INSERT INTO usuarios(usuario, password) values('Cristina', 'neveritas13');
