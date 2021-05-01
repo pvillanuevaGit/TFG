@@ -13,6 +13,7 @@ INSERT INTO usuarios(usuario, password) values('Cristina', 'neveritas13');
 create table videos(
     id_item int NOT NULL AUTO_INCREMENT,
     titulo varchar(255),
+    url_miniatura varchar(255) NOT NULL,
     url_video varchar(1000) NOT NULL,
     categoria varchar(255) NOT NULL,
     id_usuario int NOT NULL,
@@ -20,22 +21,21 @@ create table videos(
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Boda','https://i.ytimg.com/vi/4h5QoSCtnzY/hqdefault.jpg','reel',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Tiro','https://i.ytimg.com/vi/30p1IIpR4wU/hqdefault.jpg','reel',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Eventos','https://i.ytimg.com/vi/gcv3AOt7nQU/hqdefault.jpg','reel',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Reel Neveritas Teatro','https://i.ytimg.com/vi/84Xb7EVNK1s/hqdefault.jpg','reel',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Campeonato España','https://i.ytimg.com/vi/dr4H4Wh_QKA/hqdefault.jpg','teledeporte',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Campeonato Plato','https://i.ytimg.com/vi/aeiY3_tgWOI/hqdefault.jpg','teledeporte',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Final WEC 2015','https://i.ytimg.com/vi/jjc2Ex8JFSY/hqdefault.jpg','streaming',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Opening Game WEC','https://i.ytimg.com/vi/3XWGwlJd0dw/hqdefault.jpg','streaming',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Armas Históricas','https://i.ytimg.com/vi/LbU7WGhlKuM/hqdefault.jpg','streaming',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Avanzando Yardas','https://i.ytimg.com/vi/uPkNmHtlDk8/hqdefault.jpg','reportaje',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Flag Football','https://i.ytimg.com/vi/ZLU9dDVCccM/hqdefault.jpg','reportaje',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Entrevistas Football','https://i.ytimg.com/vi/wDvTek5mghE/hqdefault.jpg','reportaje',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Moda Arte 2015','https://i.ytimg.com/vi/aMPYwOd2ECk/hqdefault.jpg','publicidad',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Desfile Franela Gray','https://i.ytimg.com/vi/zZCVHW-Ieow/hqdefault.jpg','publicidad',1);
-INSERT INTO videos(titulo, url_video, categoria, id_usuario) values('Mar de Redín','https://i.ytimg.com/vi/KNCaeCtBp00/hqdefault.jpg','publicidad',1);
-
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Reel Neveritas Boda','https://i.ytimg.com/vi/4h5QoSCtnzY/hqdefault.jpg','https://www.youtube.com/embed/4h5QoSCtnzY?controls=0','reel',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Reel Neveritas Tiro','https://i.ytimg.com/vi/30p1IIpR4wU/hqdefault.jpg','https://www.youtube.com/embed/30p1IIpR4wU?controls=0','reel',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Reel Neveritas Eventos','https://i.ytimg.com/vi/gcv3AOt7nQU/hqdefault.jpg','https://www.youtube.com/embed/gcv3AOt7nQU?controls=0','reel',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Reel Neveritas Teatro','https://i.ytimg.com/vi/84Xb7EVNK1s/hqdefault.jpg','https://www.youtube.com/embed/84Xb7EVNK1s?controls=0','reel',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Campeonato España','https://i.ytimg.com/vi/dr4H4Wh_QKA/hqdefault.jpg','https://www.youtube.com/embed/dr4H4Wh_QKA?controls=0','teledeporte',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Campeonato Plato','https://i.ytimg.com/vi/aeiY3_tgWOI/hqdefault.jpg','https://www.youtube.com/embed/aeiY3_tgWOI?controls=0','teledeporte',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Final WEC 2015','https://i.ytimg.com/vi/jjc2Ex8JFSY/hqdefault.jpg','https://www.youtube.com/embed/jjc2Ex8JFSY?controls=0','streaming',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Opening Game WEC','https://i.ytimg.com/vi/3XWGwlJd0dw/hqdefault.jpg','https://www.youtube.com/embed/3XWGwlJd0dw?controls=0','streaming',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Armas Históricas','https://i.ytimg.com/vi/LbU7WGhlKuM/hqdefault.jpg','https://www.youtube.com/embed/LbU7WGhlKuM?controls=0','streaming',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Avanzando Yardas','https://i.ytimg.com/vi/uPkNmHtlDk8/hqdefault.jpg','https://www.youtube.com/embed/uPkNmHtlDk8?controls=0','reportaje',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Flag Football','https://i.ytimg.com/vi/ZLU9dDVCccM/hqdefault.jpg','https://www.youtube.com/embed/ZLU9dDVCccM?controls=0','reportaje',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Entrevistas Football','https://i.ytimg.com/vi/wDvTek5mghE/hqdefault.jpg','https://www.youtube.com/embed/wDvTek5mghE?controls=0','reportaje',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Moda Arte 2015','https://i.ytimg.com/vi/aMPYwOd2ECk/hqdefault.jpg','https://www.youtube.com/embed/aMPYwOd2ECk?controls=0','publicidad',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Desfile Franela Gray','https://i.ytimg.com/vi/zZCVHW-Ieow/hqdefault.jpg','https://www.youtube.com/embed/zZCVHW-Ieow?controls=0','publicidad',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Mar de Redín','https://i.ytimg.com/vi/KNCaeCtBp00/hqdefault.jpg','https://www.youtube.com/embed/KNCaeCtBp00?controls=0','publicidad',1);
 create table empresas(
     id_item int NOT NULL AUTO_INCREMENT,    
     url_logo varchar(1000) NOT NULL,
