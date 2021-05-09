@@ -36,6 +36,11 @@ INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) valu
 INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Moda Arte 2015','https://i.ytimg.com/vi/aMPYwOd2ECk/hqdefault.jpg','https://www.youtube.com/embed/aMPYwOd2ECk?controls=0','publicidad',1);
 INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Desfile Franela Gray','https://i.ytimg.com/vi/zZCVHW-Ieow/hqdefault.jpg','https://www.youtube.com/embed/zZCVHW-Ieow?controls=0','publicidad',1);
 INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('Mar de Redín','https://i.ytimg.com/vi/KNCaeCtBp00/hqdefault.jpg','https://www.youtube.com/embed/KNCaeCtBp00?controls=0','publicidad',1);
+INSERT INTO videos(titulo, url_miniatura, url_video, categoria, id_usuario) values('El Retrato','https://i.ytimg.com/vi/pOiIrlAh3kg/hqdefault.jpg','https://www.youtube.com/embed/pOiIrlAh3kg?controls=0','publicidad',1);
+
+
+
+
 create table empresas(
     id_item int NOT NULL AUTO_INCREMENT,    
     url_logo varchar(1000) NOT NULL,
